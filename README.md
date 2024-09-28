@@ -1,6 +1,6 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9. Node version 18.10.0. npm version 8.19.2
 
 ## Development server
 
