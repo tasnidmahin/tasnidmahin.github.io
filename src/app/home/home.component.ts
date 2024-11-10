@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { LANDING_TEXTS } from './home.constants';
 
 @Component({
   selector: 'app-home',
@@ -6,9 +7,16 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  public name:string = LANDING_TEXTS.NAME;
   public title:string = '';
-  private full_title:string = 'A Software Engineer';
-  private index:number = 0;
+  private all_title:string[][] = [
+    [LANDING_TEXTS.SOFTWARE_ENGINEER],
+    [LANDING_TEXTS.FULL_STACK_DEVELOPER],
+    [LANDING_TEXTS.FRONT_END_DEVELOPER]
+  ];
+  private current_title = this.all_title[0][0];
+  private x_index:number = 0;
+  private y_index:number = 0;
   private isDeleting:boolean = false;
 
 
@@ -23,24 +31,21 @@ export class HomeComponent {
     const delayBetweenLoops = 1000;
     
 
-    if(!this.isDeleting && this.index < this.full_title.length) {
-      this.title += this.full_title.charAt(this.index);
-      this.index++;
-
-      console.log("A");
-    } else if(this.isDeleting && this.index > 0) {
+    if(!this.isDeleting && this.x_index < this.current_title.length) {
+      this.title += this.current_title.charAt(this.x_index);
+      this.x_index++;
+    } else if(this.isDeleting && this.x_index > 0) {
       this.title = this.title.slice(0, -1);
-      this.index--;
-      console.log("B");
-    } else if(this.index == 0) {
+      this.x_index--;
+    } else if(this.x_index == 0) {
       this.isDeleting = false;
-      console.log("C");
-      
-    } else if(this.index == this.full_title.length) {
+      this.y_index++;
+      this.y_index%=3;
+      this.current_title = this.all_title[this.y_index][0];      
+    } else if(this.x_index == this.current_title.length) {
       this.isDeleting = true;
       setTimeout(() => this.typeWriterEffect(), delayBetweenLoops);
-      console.log("D");
-      
+  
       return;
     }
 
