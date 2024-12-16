@@ -2,11 +2,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { LANDING_TEXTS } from './home.constants';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-main-layout',
+  templateUrl: './main-layout.component.html',
+  styleUrls: ['./main-layout.component.scss']
 })
-export class HomeComponent {
+export class MainLayoutComponent {
   public name:string = LANDING_TEXTS.NAME;
   public title:string = '';
   private all_title:string[][] = [
