@@ -40,7 +40,7 @@
           font-family: 'Courier New', monospace;
           font-size: 3rem;
           color: #00aaff;
-          white-space: nowrap; /* Prevents wrapping */
+          // white-space: nowrap; /* Prevents wrapping */
           overflow: hidden; /* Hides overflowing text */
           border-right: 2px solid transparent; /* Optional blinking cursor effect */
           animation: blink-cursor 0.8s steps(2) infinite;

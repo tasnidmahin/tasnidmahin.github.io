@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { LANDING_TEXTS } from './home.constants';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-main-layout',
