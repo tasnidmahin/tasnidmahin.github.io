@@ -1,0 +1,51 @@
+.home-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    .background-video {
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .text-container {
+      height: 100%;
+
+      .name-container {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white; 
+
+        .name {
+            font-size: 4rem;
+        }
+      }
+
+      .title-container {
+        height: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        .title {
+          font-family: 'Courier New', monospace;
+          font-size: 3rem;
+          color: #00aaff;
+          border-right: 2px solid transparent; /* Optional blinking cursor effect */
+          animation: blink-cursor 0.8s steps(2) infinite;
+        }
+        
+        /* Blinking cursor effect */
+        @keyframes blink-cursor {
+          50% {
+            border-right-color: #00aaff;
+          }
+        }
+      }
+
+    }
+      
+}
