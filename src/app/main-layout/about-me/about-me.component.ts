@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LANDING_TEXTS } from '../home.constants';
 
 @Component({
   standalone: true,
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
-
+  public name:string = LANDING_TEXTS.NAME;
 }
