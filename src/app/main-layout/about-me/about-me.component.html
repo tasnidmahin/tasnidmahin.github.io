@@ -1,12 +1,40 @@
-<div class="about-me-container">
-    <div class="image-container">
-        <img src="../../../assets/me.png" alt="">
-    </div>
-    <div class="content-container">
-        <div class="name"> {{name}} </div>
-        <div class="title"></div>
-        <div class="quote"></div>
-        <div class="description"></div>
-        <div class="social-container"></div>
+<div class="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+    <div class="container mx-auto px-4 py-16 min-h-screen flex items-center">
+        <div class="w-full max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="order-2 md:order-1 relative">
+                <div class="absolute inset-0 bg-indigo-600 rounded-2xl transform rotate-6 scale-105 opacity-10"></div>
+                <img src="../../../assets/me.png" alt="Tasnid Mahin's pic" 
+                    class="w-full h-[500px] object-cover rounded-2xl shadow-xl">
+            </div>
+            
+            <div class="order-1 md:order-2 space-y-8">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        {{name}}
+                    </h1>
+                    <h2 class="text-xl text-indigo-600 font-semibold">
+                        {{title}}
+                    </h2>
+                </div>
+
+
+                <blockquote class="text-lg text-gray-700 border-l-4 border-indigo-500 pl-4 italic">
+                    "I believe in crafting digital experiences that merge creativity with
+                    functionality. Every line of code I write is an opportunity to make
+                    the web a more beautiful and accessible place."
+                </blockquote>
+
+
+                <p class="text-gray-600 leading-relaxed">
+                    With over 5 years of experience in full-stack development, I
+                    specialize in building scalable web applications that prioritize user
+                    experience. When I'm not coding, you'll find me exploring new
+                    technologies or contributing to open-source projects.
+                </p>
+
+                <div class="social-container"></div>
+            </div>
+        </div>
     </div>
 </div>
