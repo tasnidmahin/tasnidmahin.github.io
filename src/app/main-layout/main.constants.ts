@@ -9,4 +9,5 @@ export const LANDING_TEXTS = {
 	MY_SKILLS: 'My Skills',
 	FRONTEND_DEVELOPMENT: 'Frontend Development',
 	BACKEND_DEVELOPMENT: 'Backend Development',
+	ANGULAR: 'Angular',
 }

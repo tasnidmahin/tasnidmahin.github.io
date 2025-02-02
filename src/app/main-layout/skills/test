@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Full Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#1B9AF5" data-border-radius="medium"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo" class="h-8 w-auto"/>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#frontend" class="text-gray-300 hover:text-custom px-3 py-2 rounded-md text-sm font-medium">Frontend</a>
+                        <a href="#backend" class="text-gray-300 hover:text-custom px-3 py-2 rounded-md text-sm font-medium">Backend</a>
+                        <button class="bg-custom text-white px-4 py-2 !rounded-button hover:bg-custom/90 transition-colors">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-16">
+        <section class="relative min-h-[calc(100vh-4rem)] flex items-center">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+            </div>
+            <div class="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-custom to-purple-500 bg-clip-text text-transparent">
+                            Full Stack Developer
+                        </h1>
+                        <p class="text-xl text-gray-300 mb-8">
+                            Passionate about creating seamless digital experiences through innovative full-stack solutions. Specializing in modern web technologies and scalable architecture.
+                        </p>
+                        <div class="flex gap-4">
+                            <button class="bg-custom text-white px-6 py-3 !rounded-button hover:bg-custom/90 transition-colors">
+                                View Projects
+                            </button>
+                            <button class="border border-custom text-custom px-6 py-3 !rounded-button hover:bg-custom/10 transition-colors">
+                                Download CV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A 3D vector-style image with a clean, solid background color that contrasts significantly with the main theme. The content includes a modern workspace setup with floating 3D icons representing web development tools and technologies, rendered in a minimalist style with subtle gradients&width=600&height=600&orientation=squarish&removebg=true&flag=7cc8f747-82ea-41e5-9e89-47828bc8d21f&flag=37e8d4da-7c03-4db1-a61f-ea3be71acf4f&flag=86c1daba-302b-4865-bd5f-a8bc691e53b1" alt="Developer Illustration" class="w-full h-auto rounded-lg shadow-2xl"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frontend" class="py-24 bg-gray-800/50">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold mb-12 text-center">Frontend Development Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="text-center">
+                            <i class="fab fa-angular text-4xl mb-4 text-[#DD0031]"></i>
+                            <h3 class="font-medium">Angular</h3>
+                        </div>
+                    </div>
+                    <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="text-center">
+                            <i class="fab fa-js text-4xl mb-4 text-[#3178C6]"></i>
+                            <h3 class="font-medium">TypeScript</h3>
+                        </div>
+                    </div>
+                    <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="text-center">
+                            <i class="fab fa-js text-4xl mb-4 text-[#F7DF1E]"></i>
+                            <h3 class="font-medium">JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="text-center">
+                            <i class="fas fa-code text-4xl mb-4 text-[#764ABC]"></i>
+                            <h3 class="font-medium">NgXs</h3>
+                        </div>
+                    </div>
+                    <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-sass text-4xl mb-4 text-[#CC6699]"></i><h3 class="font-medium">Scss</h3></div></div><div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-html5 text-4xl mb-4 text-[#38B2AC]"></i><h3 class="font-medium">Tailwind</h3></div></div><div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-html5 text-4xl mb-4 text-[#E34F26]"></i><h3 class="font-medium">HTML5</h3></div></div><div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-css3-alt text-4xl mb-4 text-[#264DE4]"></i><h3 class="font-medium">CSS3</h3></div></div><div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-vial text-4xl mb-4 text-[#C21325]"></i><h3 class="font-medium">Jest</h3></div></div><div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-figma text-4xl mb-4 text-[#F24E1E]"></i><h3 class="font-medium">Figma</h3></div></div><div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-puzzle-piece text-4xl mb-4 text-[#FF6B6B]"></i><h3 class="font-medium">PrimeNG</h3></div></div></div>
+            </div>
+        </section>
+
+        <section id="backend" class="py-24">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold mb-12 text-center">Backend Development Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6"><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-java text-4xl mb-4 text-[#007396]"></i><h3 class="font-medium">Java</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-leaf text-4xl mb-4 text-[#6DB33F]"></i><h3 class="font-medium">Spring Boot</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-database text-4xl mb-4 text-[#4479A1]"></i><h3 class="font-medium">MySQL</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-aws text-4xl mb-4 text-[#FF9900]"></i><h3 class="font-medium">AWS</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-stream text-4xl mb-4 text-[#231F20]"></i><h3 class="font-medium">Kafka</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-database text-4xl mb-4 text-[#DC382D]"></i><h3 class="font-medium">Redis</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-vial text-4xl mb-4 text-[#25A162]"></i><h3 class="font-medium">JUnit</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-check-double text-4xl mb-4 text-[#C21325]"></i><h3 class="font-medium">Mockito</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-paper-plane text-4xl mb-4 text-[#FF6C37]"></i><h3 class="font-medium">Postman</h3></div></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo" class="h-8 w-auto"/>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-custom">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-custom">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-custom">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>© 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+
+</body></html>
