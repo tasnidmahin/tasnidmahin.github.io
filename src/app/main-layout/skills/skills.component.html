@@ -1,191 +1,183 @@
-<!-- <div class="bg-gradient-to-br from-gray-800 via-slate-800 to-zinc-800">
-    <div class="flex flex-col md:flex-row md:flex-wrap min-h-screen">
-        <div class="md:w-full h-1/5 text-white text-4xl font-bold m-6"> {{skills}} </div>
-        <div class="md:w-1/2 md:h-4/5 h-2/5">
-            {{frontend_development}}
-        </div>
-                Frontend Development Box
-                <div class="md:w-1/2 md:h-4/5 h-2/5 flex items-center justify-center p-6">
-                    <div class="bg-gray-900 text-white p-6 rounded-lg shadow-xl shadow-purple-400">
-                        <h3 class="text-2xl font-semibold mb-4">Frontend Development</h3>
-                        <ul class="list-disc list-inside space-y-2">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Angular</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                </div>
-        <div class="md:w-1/2 md:h-4/5 h-2/5">
-            {{backend_development}}
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="bg-gradient-to-br from-gray-800 via-slate-800 to-zinc-800">
-    <div class="flex flex-col min-h-screen min-w-full">
-        <div class="min-h-20 text-white text-4xl font-bold p-8">
-            {{skills}}
-        </div>
-        <div class="min-h-72 mx-6 mb-6 px-8 rounded-md bg-slate-900 shadow-lg shadow-fuchsia-200">
-            <div class="text-white text-2xl py-3 font-bold text-center"> {{frontend_development}} </div>
-            <div class="flex">
-                <div class="w-32 h-8 flex items-center justify-center rounded-sm bg-teal-950 shadow-sm shadow-fuchsia-200">
-                    {{angular}}
-                </div>
-            </div>
-        </div>
-        <div class="min-h-72 mx-6 my-6 rounded-md bg-slate-900 shadow-lg shadow-fuchsia-200">
-            <div class="text-white text-2xl py-3 font-bold text-center"> {{backend_development}} </div>
-            
-        </div>
-    </div>
-</div> -->
-
-
-
-<!-- <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen">
-    <div class="flex flex-col min-h-screen min-w-full">
-        
-        <div class="min-h-20 text-white text-4xl font-bold p-8 text-center">
-            {{skills}}
-        </div>
-
-
-        <div class="min-h-72 mx-6 mb-6 px-8 py-6 rounded-lg bg-gray-950 shadow-lg shadow-fuchsia-500/50">
-            <div class="text-white text-2xl py-3 font-bold text-center"> {{frontend_development}} </div>
-            <div class="flex justify-center">
-                <div class="flex items-center gap-3 px-4 py-2 rounded-md bg-teal-900 shadow-md shadow-fuchsia-400/50">
-                    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" class="w-6 h-6">
-                    <span class="text-white font-semibold"> {{angular}} </span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="min-h-72 mx-6 my-6 px-8 py-6 rounded-lg bg-gray-950 shadow-lg shadow-fuchsia-500/50">
-            <div class="text-white text-2xl py-3 font-bold text-center"> {{backend_development}} </div>
-        </div>
-    </div>
-</div> -->
-
-
-<!-- 
-<div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-    <div class="flex flex-col min-h-screen min-w-full">
-       
-        <div class="min-h-20 text-white text-4xl font-bold p-8">
-            {{skills}}
-        </div>
-
-
-        <div class="min-h-72 mx-6 mb-6 px-8 rounded-md bg-gray-800 shadow-lg shadow-purple-500/50">
-            <div class="text-white text-2xl py-3 font-bold text-center"> {{frontend_development}} </div>
-            <div class="flex items-center justify-center mt-4">
-                <div class="w-40 h-10 flex items-center justify-center rounded-md bg-teal-900 shadow-md shadow-purple-500/50 hover:bg-teal-800 transition duration-300">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular Icon" class="w-6 h-6 mr-2" />
-                    <span class="text-white font-semibold">{{angular}}</span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="min-h-72 mx-6 my-6 rounded-md bg-gray-800 shadow-lg shadow-purple-500/50">
-            <div class="text-white text-2xl py-3 font-bold text-center"> {{backend_development}} </div>
-
-        </div>
-    </div>
-</div> -->
-
-
 <div class="bg-gray-900 text-gray-100 bold">
     <div class="py-24 bg-gray-800/50">
         <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12 text-center">Frontend Development Skills</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center">{{frontend_development_skills}}</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
-                <div class="group p-4 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <!-- <i class="fab fa-angular text-4xl mb-4 text-[#DD0031]"></i> -->
-                        <h3 class="font-medium">Angular</h3>
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/angular.png" alt="Angular Logo" class="w-10 h-10 mb-1">
+                        <h3 class="font-medium">{{angular}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#fe30d2] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-js text-4xl mb-4 text-[#3178C6]"></i>
-                        <h3 class="font-medium">TypeScript</h3>
+                
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/ts.png" alt="Typescript Logo" class="w-11 h-10 mb-2">
+                        <h3 class="font-medium">{{typescript}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#007bcd] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-js text-4xl mb-4 text-[#F7DF1E]"></i>
-                        <h3 class="font-medium">JavaScript</h3>
+
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/js.png" alt="Javascript Logo" class="w-11 h-10 mb-2">
+                        <h3 class="font-medium">{{javascript}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#ffd600] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="flex flex-col items-center">
-                        <!-- <i class="fas fa-code text-4xl mb-4 text-[#764ABC]"></i> -->
+
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
                         <img src="assets/icons/ngxs.svg" alt="NGXS Logo" class="w-16 h-6">
-                        <h3 class="font-medium mt-1">NgXs</h3>
+                        <h3 class="font-medium mt-1">{{ngxs}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#4938ef] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-sass text-4xl mb-4 text-[#CC6699]"></i>
-                        <h3 class="font-medium">Scss</h3>
+
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/scss.svg" alt="Scss Logo" class="w-16 h-11 mb-1">
+                        <h3 class="font-medium">{{scss}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#d1629b] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-html5 text-4xl mb-4 text-[#38B2AC]"></i>
-                        <h3 class="font-medium">Tailwind</h3>
+
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/tailwind.png" alt="Tailwind CSS Logo" class="w-14 h-8 mb-2">
+                        <h3 class="font-medium">{{tailwind}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#07b6d5] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-html5 text-4xl mb-4 text-[#E34F26]"></i>
-                        <h3 class="font-medium">HTML5</h3>
+                
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/jest.png" alt="Jest Logo" class="w-10 h-10 mb-1">
+                        <h3 class="font-medium">{{jest}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#9a405b] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-css3-alt text-4xl mb-4 text-[#264DE4]"></i>
-                        <h3 class="font-medium">CSS3</h3>
+
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/figma.png" alt="Figma Logo" class="w-8 h-10 mb-1">
+                        <h3 class="font-medium">{{figma}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#ff3939] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fas fa-vial text-4xl mb-4 text-[#C21325]"></i>
-                        <h3 class="font-medium">Jest</h3>
+
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/primeNg.png" alt="PrimeNG Logo" class="w-8 h-10 mb-1">
+                        <h3 class="font-medium">{{primeng}}</h3>
                     </div>
-                </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-figma text-4xl mb-4 text-[#F24E1E]"></i>
-                        <h3 class="font-medium">Figma</h3>
-                    </div>
-                </div>
-                <div class="group p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fas fa-puzzle-piece text-4xl mb-4 text-[#FF6B6B]"></i>
-                        <h3 class="font-medium">PrimeNG</h3>
-                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#c3002f] transition-all duration-300 group-hover:w-full"></span>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="py-24">
-        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12 text-center">Backend Development Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <i class="fab fa-java text-4xl mb-4 text-[#007396]"></i>
-                        <h3 class="font-medium">Java</h3>
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">{{backend_development_skills}}</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/java.png" alt="Java Logo" class="w-10 h-11 mb-1">
+                        <h3 class="font-medium">{{java}}</h3>
                     </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#0e8ac8] transition-all duration-300 group-hover:w-full"></span>
                 </div>
-                <div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-leaf text-4xl mb-4 text-[#6DB33F]"></i><h3 class="font-medium">Spring Boot</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-database text-4xl mb-4 text-[#4479A1]"></i><h3 class="font-medium">MySQL</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fab fa-aws text-4xl mb-4 text-[#FF9900]"></i><h3 class="font-medium">AWS</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-stream text-4xl mb-4 text-[#231F20]"></i><h3 class="font-medium">Kafka</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-database text-4xl mb-4 text-[#DC382D]"></i><h3 class="font-medium">Redis</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-vial text-4xl mb-4 text-[#25A162]"></i><h3 class="font-medium">JUnit</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-check-double text-4xl mb-4 text-[#C21325]"></i><h3 class="font-medium">Mockito</h3></div></div><div class="group p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1"><div class="text-center"><i class="fas fa-paper-plane text-4xl mb-4 text-[#FF6C37]"></i><h3 class="font-medium">Postman</h3></div></div></div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/spring.png" alt="Spring Logo" class="w-12 h-11 mb-1">
+                        <h3 class="font-medium">{{spring_boot}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#8bc34a] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/mysql.png" alt="MySQL Logo" class="w-12 h-11 mb-1">
+                        <h3 class="font-medium">{{mysql}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#00658c] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/aws.png" alt="AWS Logo" class="w-12 h-8 mb-1">
+                        <h3 class="font-medium">{{aws}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#f7991d] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/kafka.png" alt="Kafka Logo" class="w-8 h-11 mb-1">
+                        <h3 class="font-medium">{{kafka}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#fffeff] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/redis.png" alt="Redis Logo" class="w-9 h-9 mb-1">
+                        <h3 class="font-medium">{{redis}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#d82a20] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/junit5.png" alt="Junit Logo" class="w-9 h-9 mb-1">
+                        <h3 class="font-medium">{{junit}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#25a162] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/mockito.png" alt="Mockito Logo" class="w-20 h-7 mb-1">
+                        <h3 class="font-medium">{{mockito}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#6ca824] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                <div class="group relative p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/postman.png" alt="Postman Logo" class="w-9 h-9 mb-1">
+                        <h3 class="font-medium">{{postman}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#fd6c35] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="py-24 bg-gray-800/50">
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">{{tools_others}}</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/git.png" alt="Git Logo" class="w-10 h-10 mb-1">
+                        <h3 class="font-medium">{{git}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#f05030] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+                
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/sonarqube.svg" alt="Sonarqube Logo" class="w-11 h-10 mb-2">
+                        <h3 class="font-medium">{{sonarqube}}</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#499cd2] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+
+                <div class="group relative p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <img src="assets/icons/grafana.png" alt="Grafana Logo" class="w-11 h-10 mb-2">
+                        <h3 class="font-medium">Grafana</h3>
+                    </div>
+                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-[#f3821c] transition-all duration-300 group-hover:w-full"></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
