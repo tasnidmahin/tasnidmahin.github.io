@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { LANDING_TEXTS } from '../main.constants';
+import { TEXTS } from '../main.constants';
 
 @Component({
   standalone: true,
@@ -8,12 +8,12 @@ import { LANDING_TEXTS } from '../main.constants';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  public name:string = LANDING_TEXTS.HI_NAME;
+  public name:string = TEXTS.HI_NAME;
   public title:string = '';
   private all_title:string[][] = [
-    [LANDING_TEXTS.A_SOFTWARE_ENGINEER],
-    [LANDING_TEXTS.A_FULL_STACK_DEVELOPER],
-    [LANDING_TEXTS.A_FRONT_END_DEVELOPER]
+    [TEXTS.A_SOFTWARE_ENGINEER],
+    [TEXTS.A_FULL_STACK_DEVELOPER],
+    [TEXTS.A_FRONT_END_DEVELOPER]
   ];
   private current_title = this.all_title[0][0];
   private x_index:number = 0;

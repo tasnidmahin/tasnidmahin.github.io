@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LANDING_TEXTS } from '../main.constants';
+import { TEXTS } from '../main.constants';
 
 @Component({
   standalone: true,
@@ -8,6 +8,6 @@ import { LANDING_TEXTS } from '../main.constants';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
-  public name:string = LANDING_TEXTS.NAME;
-  public title:string = LANDING_TEXTS.FULL_STACK_DEVELOPER;
+  public name:string = TEXTS.NAME;
+  public title:string = TEXTS.FULL_STACK_DEVELOPER;
 }
