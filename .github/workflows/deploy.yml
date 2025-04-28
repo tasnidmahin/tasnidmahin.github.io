@@ -8,6 +8,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -27,6 +29,10 @@ jobs:
 
       - name: Build Angular project
         run: npx ng build --configuration production --base-href "https://tasnidmahin.github.io/"
+
+      - name: Debug - List build output
+        run: |
+          ls -R dist/
 
       - name: Deploy to GitHub Pages
         run: |
