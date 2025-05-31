@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @Component({
   standalone: true,
@@ -13,7 +14,8 @@ import { ExperienceComponent } from './experience/experience.component';
     HomeComponent, 
     AboutMeComponent, 
     SkillsComponent, 
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent
   ]
 })
 export class MainLayoutComponent {
