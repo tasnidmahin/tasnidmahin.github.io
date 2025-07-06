@@ -1,0 +1,40 @@
+.projects-section {
+  background-color: #1a202c; // Darker, more Tailwind-like dark (gray.900)
+  color: #e2e8f0; // Lighter text (gray.200)
+  padding: 60px 20px; // More vertical padding
+  min-height: 100vh;
+  display: flex; // Use flex to center content vertically if it's less than 100vh
+  flex-direction: column;
+  align-items: center; // Center title and grid horizontally
+  // justify-content: center; // Uncomment if you want to center content block vertically
+
+  .section-title {
+    text-align: center;
+    font-size: 3em; // Larger title
+    font-weight: 700; // Bolder
+    margin-bottom: 50px; // More space below title
+    color: #ffffff;
+    // text-transform: uppercase; // Optional: if you want uppercase title
+    // letter-spacing: 1px; // Optional: letter spacing
+  }
+
+  .projects-grid {
+    display: grid;
+    // Use grid-template-columns for responsive columns
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 30px; // Increased gap
+    width: 100%;
+    max-width: 1600px; // Max width for the grid container
+    justify-content: center; // Centers items if there's space (e.g. last row)
+
+    // Remove margin from app-project-card as gap handles spacing
+    // ::ng-deep app-project-card .project-card {
+    //   margin: 0;
+    // }
+    // Note: ::ng-deep is generally discouraged. Better to design card styles
+    // so they don't need overriding or rely on grid gap for spacing.
+    // The current card SCSS has margin: 16px. The grid gap will add to this.
+    // It's better to remove margin from .project-card if grid-gap is used.
+    // This was handled by removing the margin in project-card.component.scss
+  }
+}
