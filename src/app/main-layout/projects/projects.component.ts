@@ -16,21 +16,19 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
 export class ProjectsComponent {
   public projects: Project[] = [
     {
-      image: 'assets/project-image-1.png', // Placeholder image
-      title: 'Project Alpha',
-      description: 'This is a description for Project Alpha. It involved building a cool feature using modern technologies.',
-      tags: ['Angular', 'TypeScript', 'SCSS', 'Node.js'],
-      codeUrl: 'https://github.com/user/project-alpha',
-      liveUrl: 'https://project-alpha.example.com'
+      image: 'assets/project-1-image.png',
+      title: 'Portfolio Website',
+      description: 'A personal portfolio website showcasing my skills and projects.',
+      tags: ['Angular', 'TypeScript', 'SCSS', 'Tailwind'],
+      codeUrl: 'https://github.com/tasnidmahin/tasnidmahin.github.io',
+      liveUrl: 'https://tasnidmahin.github.io/'
     },
     {
-      image: 'assets/project-image-2.jpg', // Placeholder image
-      title: 'Project Beta',
-      description: 'Project Beta focused on creating a scalable backend system with a robust API.',
-      tags: ['Java', 'Spring Boot', 'MySQL', 'Docker'],
-      codeUrl: 'https://github.com/user/project-beta'
-      // liveUrl is optional, so it can be omitted
+      image: 'assets/project-2-image.jpg',
+      title: 'MaidEasy',
+      description: 'A Maid hiring online platform that connects customers with professional maids.',
+      tags: ['C#', 'Javascript', 'MySQL', 'Firebase'],
+      codeUrl: 'https://github.com/tasnidmahin/MaidEasy'
     }
-    // Add more sample projects if you like
   ];
 }

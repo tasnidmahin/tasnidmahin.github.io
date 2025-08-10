@@ -46,9 +46,6 @@ export class ExperienceComponent {
   public my_experiences = TEXTS.MY_EXPERIENCES;
 
   public isEven(index: number): boolean {
-    console.log(index);
-    console.log(index % 2 === 0);
-    
     return index % 2 === 0;
   };
 
