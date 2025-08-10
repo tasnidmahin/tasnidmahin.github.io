@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { Project } from './projects.model';
-import { CommonModule } from '@angular/common'; // Import CommonModule
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   imports: [
-    CommonModule, // Add CommonModule here for *ngFor
+    CommonModule,
     ProjectCardComponent
   ]
 })
