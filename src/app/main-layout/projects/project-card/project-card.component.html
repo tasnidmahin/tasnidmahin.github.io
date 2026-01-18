@@ -1,12 +1,42 @@
-<div *ngIf="project" class="project-card">
-  <img [src]="project.image" [alt]="project.title + ' image'" class="project-image">
-  <h3 class="project-title">{{ project.title }}</h3>
-  <p class="project-description">{{ project.description }}</p>
-  <div class="project-tags">
-    <span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span>
+<div *ngIf="project" class="flex flex-col bg-white text-[#333333] rounded-xl p-6 w-[360px]
+    shadow-[0_8px_16px_rgba(0,0,0,0.15)]
+    transition-transform
+    duration-300 ease-in-out
+    hover:-translate-y-2
+    hover:shadow-[0_12px_24px_rgba(0,0,0,0.2)]">
+  <img [src]="project.image" [alt]="project.title + ' image'" class="w-full h-[200px] object-cover rounded-lg mb-4">
+  <h3 class="text-2xl font-semibold mb-3 text-gray-900">{{ project.title }}</h3>
+  <p class="text-base leading-relaxed mb-4 text-gray-700 flex-grow">{{ project.description }}</p>
+  <div class="mb-5 flex flex-wrap gap-2">
+    <span *ngFor="let tag of project.tags" 
+          class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium uppercase">
+      {{ tag }}
+    </span>
   </div>
-  <div class="project-links">
-    <a *ngIf="project.codeUrl" [href]="project.codeUrl" target="_blank" rel="noopener noreferrer" class="project-link">View Code</a>
-    <a *ngIf="project.liveUrl" [href]="project.liveUrl" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+  <div class="flex gap-4">
+    <a *ngIf="project.codeUrl" 
+        [href]="project.codeUrl" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="text-blue-500 
+                font-semibold
+                px-4 py-2 border-2 border-transparent rounded-lg 
+                transition-all duration-300 ease-in-out
+                hover:bg-blue-50 hover:border-blue-500 hover:text-blue-600"
+    >
+        View Code
+    </a>
+    <a *ngIf="project.liveUrl" 
+        [href]="project.liveUrl" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="text-blue-500 
+                font-semibold
+                px-4 py-2 border-2 border-transparent rounded-lg 
+                transition-all duration-300 ease-in-out
+                hover:bg-blue-50 hover:border-blue-500 hover:text-blue-600"
+    >
+        Live Demo
+    </a>
   </div>
 </div>
