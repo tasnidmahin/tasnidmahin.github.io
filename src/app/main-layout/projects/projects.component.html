@@ -1,6 +1,7 @@
-<div class="projects-section">
-  <h2 class="section-title">My Projects</h2>
-  <div class="projects-grid">
+<div class="bg-gray-900 text-gray-200 py-16 px-5 min-h-screen flex flex-col items-center">
+  <h2 class="text-center text-5xl font-bold mb-12 text-white">My Projects</h2>
+  <div class="grid gap-[30px] w-full max-w-[1600px] justify-center
+    grid-cols-[repeat(auto-fill,minmax(360px,1fr))]">
     <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
   </div>
 </div>
